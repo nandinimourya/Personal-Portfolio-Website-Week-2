@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ============================================================
+       META & DOCUMENT SETUP
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio website of Nandini Mourya — MERN Stack Developer and B.Tech CSIT Student." />
+  <title>Nandini Mourya | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER SECTION
+       - Portfolio title, name, and welcome message
+  ============================================================ -->
+  <header>
+    <h1>My Personal Portfolio</h1>
+    <h2>Nandini Mourya</h2>
+    <p>Welcome! I am a passionate B.Tech CSIT student and aspiring MERN Stack Developer. I love building full-stack web applications and turning ideas into real, working products. Explore my portfolio to know more about me!</p>
+
+    <!-- Profile image — replace profile.jpg with your actual photo -->
+    <img src="images/profile_image.jpeg" alt="profile picture" width="200" height="200" />
+  </header>
+
+  <!-- ============================================================
+       NAVIGATION MENU
+       - Internal anchor links jump to each section below
+  ============================================================ -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main>
+
+    <!-- ----------------------------------------------------------
+         ABOUT SECTION
+    ---------------------------------------------------------- -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <!-- Paragraph 1: Introduction -->
+      <p>
+        Hi! I am <strong>Nandini Mourya</strong>, a third-year <strong>B.Tech student in Computer Science and Information Technology (CSIT)</strong> at Chameli Devi Group of Institutions, Indore. I am passionate about web development and love building applications that are both functional and meaningful. I am a self-driven learner who enjoys picking up new technologies quickly and applying them to real projects.
+      </p>
+
+      <!-- Paragraph 2: Education -->
+      <h3>Education</h3>
+      <p>
+        I am currently in my <strong>3rd year of B.Tech CSIT</strong> at Chameli Devi Group of Institutions, My coursework includes Data Structures and Algorithms, Database Management Systems, Operating Systems, Web Technologies, Cryptography and Network Security, and Software Engineering. I actively apply classroom knowledge to hands-on projects, which has helped me build strong practical skills alongside my academic foundation.
+      </p>
+
+      <!-- Paragraph 3: Projects -->
+      <h3>Projects &amp; Experience</h3>
+      <p>
+        One of my major projects is <strong>CareLink</strong> — a full-stack MERN web application that connects NGOs, volunteers, and donors on a single platform. I built this collaboratively with my team, and it features role-based access for Admins, NGOs, and Users, along with fundraising, event management, volunteer registration, NGO verification, and an in-app notification system. Another project I have worked on is <strong>Wanderlust</strong>, a travel listing web application. These projects have given me real experience in designing, building, and deploying complete web solutions.
+      </p>
+
+      <!-- Paragraph 4: Career Goals -->
+      <h3>Career Goals</h3>
+      <p>
+        My goal is to grow into a skilled <strong>Full-Stack MERN Developer</strong> and eventually move into software architecture and system design. I aim to work on products that create real impact, contribute to open-source communities, and keep learning through every project I take on. I believe that collaboration, adaptability, and a growth mindset are the most important qualities a developer can have — and I work every day to strengthen those in myself.
+      </p>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         SKILLS SECTION
+    ---------------------------------------------------------- -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <!-- Technical Skills: ordered list (ranked by proficiency) -->
+      <h3>Technical Skills</h3>
+      <ol>
+        <li>HTML5 &amp; CSS3 — Semantic markup, responsive design with Tailwind CSS</li>
+        <li>JavaScript (ES6+) — DOM manipulation, async/await, fetch API</li>
+        <li>React.js — Component-based UI, hooks, Vite build tool</li>
+        <li>Node.js &amp; Express.js — REST API development, middleware, routing</li>
+        <li>MongoDB — NoSQL schema design, Mongoose ODM</li>
+        <li>Git &amp; GitHub — Version control, team collaboration</li>
+        <li>C &amp; C++ — Data structures, algorithms, systems programming</li>
+        <li>Python — Scripting and basic automation</li>
+        <li>JWT Authentication &amp; bcrypt — Secure user auth systems</li>
+        <li>Multer &amp; File Uploads — Handling documents and images on the server</li>
+      </ol>
+
+      <!-- Soft Skills: unordered list -->
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Team Collaboration — Built CareLink as part of a 4-member team</li>
+        <li>Self-Learning — Independently learned MERN stack through projects and documentation</li>
+        <li>Adaptability — Quick to pick up new tools and frameworks</li>
+        <li>Communication — Clear and confident in written and verbal communication</li>
+        <li>Problem Solving — Structured, analytical approach to debugging and design</li>
+        <li>Time Management — Balancing academics, projects, and personal growth</li>
+      </ul>
+
+      <!-- Hobbies and Interests: unordered list -->
+      <h3>Hobbies &amp; Interests</h3>
+      <ul>
+        <li>Building full-stack web applications</li>
+        <li>Exploring new JavaScript frameworks and libraries</li>
+        <li>Participating in hackathons and coding challenges</li>
+        <li>Reading tech blogs and developer documentation</li>
+        <li>Listening to music</li>
+        <li>Travelling and exploring new places</li>
+      </ul>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         CONTACT SECTION
+    ---------------------------------------------------------- -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>I am open to internship opportunities, project collaborations, and any interesting conversations about web development. Fill out the form below and I will get back to you soon!</p>
+
+      <form action="#" method="post">
+
+        <!-- Name Field -->
+        <div>
+          <label for="name">Full Name <abbr title="required">*</abbr></label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e.g. Priti Sharma"
+            required
+            minlength="2"
+            maxlength="100"
+            autocomplete="name"
+          />
+        </div>
+
+        <br />
+
+        <!-- Email Field -->
+        <div>
+          <label for="email">Email Address <abbr title="required">*</abbr></label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. priti@example.com"
+            required
+            maxlength="150"
+            autocomplete="email"
+          />
+        </div>
+
+        <br />
+
+        <!-- Phone Number Field -->
+        <div>
+          <label for="phone">Phone Number (optional)</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="e.g. +91 98765 43210"
+            pattern="[+]?[0-9\s\-]{7,15}"
+            maxlength="20"
+            autocomplete="tel"
+          />
+          <small>Format: country code + number, digits and spaces only.</small>
+        </div>
+
+        <br />
+
+        <!-- Message Field -->
+        <div>
+          <label for="message">Your Message <abbr title="required">*</abbr></label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="50"
+            placeholder="Write your message here..."
+            required
+            minlength="10"
+            maxlength="1000"
+          ></textarea>
+        </div>
+
+        <br />
+
+        <!-- Buttons -->
+        <div>
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear Form</button>
+        </div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <hr />
+
+    <p>&copy; 2025 Nandini Mourya. All rights reserved.</p>
+
+    
+    <p>Connect with me:</p>
+<ul>
+  <li><a href="#">GitHub</a></li>
+  <li><a href="#">LinkedIn</a></li>
+  <li><a href="#">Twitter / X</a></li>
+</ul>
+
+    <p><small>Built with HTML5 — Week 1 Project | Developer's Arena Internship</small></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,647 @@
+/* ================================================================
+   NANDINI MOURYA — PERSONAL PORTFOLIO
+   style.css | Week 2 Project
+
+   DESIGN TOKENS
+   --purple-dark   : #1e1b4b  (deep indigo — headings, footer bg)
+   --purple-mid    : #4f46e5  (indigo — accent, buttons, links)
+   --purple-light  : #ede9fe  (lavender — section backgrounds)
+   --white         : #ffffff
+   --gray-light    : #f8f7ff  (near-white page background)
+   --gray-text     : #374151  (body text)
+   --gray-muted    : #6b7280  (subtle text, captions)
+
+   SIGNATURE: a full-width indigo gradient header with a
+   circular clipped profile photo — bold, personal, dev-coded.
+================================================================ */
+
+/* ----------------------------------------------------------------
+   1. RESET & BASE
+---------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scroll for nav anchor links */
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f7ff;
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* ----------------------------------------------------------------
+   2. TYPOGRAPHY — heading scale
+---------------------------------------------------------------- */
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+strong {
+  color: #1e1b4b;
+}
+
+/* ----------------------------------------------------------------
+   3. HEADER — signature gradient hero block
+---------------------------------------------------------------- */
+
+header {
+  background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 60%, #7c3aed 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 3.5rem 2rem 3rem;
+}
+
+header h1 {
+  color: #c4b5fd; /* soft lavender — label above the name */
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+header h2 {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+header p {
+  color: #ddd6fe;
+  max-width: 600px;
+  margin: 0 auto 1.8rem;
+  font-size: 1.05rem;
+}
+
+/* Profile image — circular crop, white ring border */
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----------------------------------------------------------------
+   4. NAVIGATION
+---------------------------------------------------------------- */
+
+nav {
+  background-color: #1e1b4b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav ul li a:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* ----------------------------------------------------------------
+   5. MAIN LAYOUT — centered content column
+---------------------------------------------------------------- */
+
+main {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ----------------------------------------------------------------
+   6. SECTIONS — shared styles
+---------------------------------------------------------------- */
+
+section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+/* Section heading underline accent */
+section > h2 {
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* ----------------------------------------------------------------
+   7. ABOUT SECTION
+---------------------------------------------------------------- */
+
+#about p {
+  font-size: 1.02rem;
+  line-height: 1.85;
+}
+
+/* ----------------------------------------------------------------
+   8. SKILLS SECTION — styled lists
+---------------------------------------------------------------- */
+
+#skills ol,
+#skills ul {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#skills ol li,
+#skills ul li {
+  padding: 0.35rem 0;
+  font-size: 0.98rem;
+  border-bottom: 1px dashed #e0e7ff;
+}
+
+#skills ol li:last-child,
+#skills ul li:last-child {
+  border-bottom: none;
+}
+
+/* Color the list markers */
+#skills ol {
+  color: #4f46e5;
+}
+
+#skills ol li,
+#skills ul li {
+  color: #374151;
+}
+
+/* ----------------------------------------------------------------
+   9. CONTACT SECTION — form
+---------------------------------------------------------------- */
+
+#contact p {
+  margin-bottom: 1.5rem;
+}
+
+form div {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1e1b4b;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+label abbr {
+  text-decoration: none;
+  color: #4f46e5;
+  margin-left: 2px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #c4b5fd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #1e1b4b;
+  background-color: #faf9ff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Buttons */
+button[type="submit"],
+button[type="reset"] {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-right: 0.8rem;
+}
+
+button[type="submit"] {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+button[type="submit"]:hover {
+  background-color: #4338ca;
+  transform: translateY(-1px);
+}
+
+button[type="reset"] {
+  background-color: #ede9fe;
+  color: #4f46e5;
+}
+
+button[type="reset"]:hover {
+  background-color: #ddd6fe;
+}
+
+/* ----------------------------------------------------------------
+   10. FOOTER
+---------------------------------------------------------------- */
+
+footer {
+  background-color: #1e1b4b;
+  color: #c4b5fd;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin-top: 0;
+}
+
+footer hr {
+  display: none; /* hr handled by background color change */
+}
+
+footer p {
+  color: #c4b5fd;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+footer a {
+  color: #a5b4fc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.8rem 0;
+  margin: 0.5rem 0 1rem;
+}
+
+footer ul li a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+footer small {
+  display: block;
+  margin-top: 1rem;
+  color: #6d6a9c;
+  font-size: 0.8rem;
+}
+
+/* ----------------------------------------------------------------
+   11. LINKS — global
+---------------------------------------------------------------- */
+
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------------
+   12. RESPONSIVE — mobile (screens under 600px)
+---------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    padding: 0.75rem 1.5rem;
+  }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+
+  button[type="submit"],
+  button[type="reset"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.6rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+}
+
+
+/* ================================================================
+   WEEK 3 ADDITIONS — JavaScript-powered styles
+================================================================ */
+
+/* ----------------------------------------------------------------
+   DARK MODE — applied when JS adds .dark-mode to <body>
+---------------------------------------------------------------- */
+
+body.dark-mode {
+  background-color: #0f0e1a;
+  color: #e2e8f0;
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #0f0e1a 0%, #312e81 60%, #4c1d95 100%);
+}
+
+body.dark-mode nav {
+  background-color: #0f0e1a;
+}
+
+body.dark-mode nav ul li a {
+  color: #a5b4fc;
+}
+
+body.dark-mode nav ul li a:hover,
+body.dark-mode nav ul li a.active {
+  background-color: #312e81;
+  color: #ffffff;
+}
+
+body.dark-mode h2 {
+  color: #c4b5fd;
+}
+
+body.dark-mode h3 {
+  color: #a5b4fc;
+}
+
+body.dark-mode p,
+body.dark-mode li {
+  color: #cbd5e1;
+}
+
+body.dark-mode strong {
+  color: #e2e8f0;
+}
+
+body.dark-mode section {
+  border-bottom-color: #1e1b4b;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="tel"],
+body.dark-mode textarea {
+  background-color: #1e1b3a;
+  border-color: #4f46e5;
+  color: #e2e8f0;
+}
+
+body.dark-mode label {
+  color: #c4b5fd;
+}
+
+body.dark-mode small {
+  color: #94a3b8;
+}
+
+body.dark-mode footer {
+  background-color: #0a0918;
+}
+
+/* ----------------------------------------------------------------
+   DARK MODE TOGGLE BUTTON — in the nav bar
+---------------------------------------------------------------- */
+
+#dark-mode-btn {
+  background: transparent;
+  border: 1.5px solid #c4b5fd;
+  color: #c4b5fd;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 1.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#dark-mode-btn:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-color: #4f46e5;
+}
+
+/* Make nav a flex row so the button sits on the right */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  flex: 1;
+}
+
+/* ----------------------------------------------------------------
+   ACTIVE NAV LINK — set by JS scroll spy
+---------------------------------------------------------------- */
+
+nav ul li a.active {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+/* ----------------------------------------------------------------
+   FORM ERROR MESSAGES
+---------------------------------------------------------------- */
+
+.error-msg {
+  display: none;
+  color: #dc2626;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+}
+
+/* ----------------------------------------------------------------
+   FORM SUCCESS / ERROR BANNER
+---------------------------------------------------------------- */
+
+.form-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1.5px solid #6ee7b7;
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* ----------------------------------------------------------------
+   SHOW / HIDE BIO BUTTON
+---------------------------------------------------------------- */
+
+#toggle-bio-btn {
+  margin-top: 0.8rem;
+  background-color: #ede9fe;
+  color: #4f46e5;
+  border: 1.5px solid #c4b5fd;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#toggle-bio-btn:hover {
+  background-color: #ddd6fe;
+}
+
+#extra-bio {
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid #4f46e5;
+  background-color: #f5f3ff;
+  border-radius: 0 8px 8px 0;
+}
+
+body.dark-mode #extra-bio {
+  background-color: #1e1b3a;
+}
+
+body.dark-mode #toggle-bio-btn {
+  background-color: #1e1b3a;
+  color: #a5b4fc;
+  border-color: #4f46e5;
+}
+
+/* ----------------------------------------------------------------
+   SKILL HIGHLIGHT — toggled by JS on click
+---------------------------------------------------------------- */
+
+#skills li.skill-highlight {
+  background-color: #ede9fe;
+  color: #1e1b4b;
+  font-weight: 700;
+  border-radius: 6px;
+  padding-left: 0.6rem;
+  border-bottom-color: #c4b5fd;
+  transition: background-color 0.2s;
+}
+
+body.dark-mode #skills li.skill-highlight {
+  background-color: #2e2a5e;
+  color: #c4b5fd;
+}
+
+/* ----------------------------------------------------------------
+   RESPONSIVE — mobile updates for new elements
+---------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  #dark-mode-btn {
+    margin: 0 0 0.5rem 0;
+  }
+}
