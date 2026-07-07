@@ -1,4 +1,3 @@
-# Personal-Portfolio-Website-Week-2
 # Personal Portfolio Website — Week 2: CSS Styling
 
 A styled personal portfolio website built by adding CSS3 to the Week 1 HTML structure. This project focuses on visual design, layout, responsiveness, and interactive styling.
